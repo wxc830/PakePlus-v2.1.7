@@ -1,0 +1,113 @@
+/* 自定义样式文件 */
+
+/* 增强AI分析结果的样式 */
+.ai-analysis-result {
+    line-height: 1.6;
+}
+
+.ai-analysis-result h1,
+.ai-analysis-result h2,
+.ai-analysis-result h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.ai-analysis-result h1 {
+    font-size: 1.5rem;
+    color: #1F2937;
+}
+
+.ai-analysis-result h2 {
+    font-size: 1.25rem;
+    color: #3B82F6;
+}
+
+.ai-analysis-result h3 {
+    font-size: 1.125rem;
+    color: #10B981;
+}
+
+.ai-analysis-result ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.ai-analysis-result li {
+    margin-bottom: 0.5rem;
+}
+
+.ai-analysis-result strong {
+    font-weight: bold;
+    color: #EF4444;
+}
+
+/* 增强按钮样式 */
+.btn-primary {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);
+}
+
+/* 增强卡片样式 */
+.card-hover {
+    transition: all 0.4s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* 增强输入框样式 */
+input:focus {
+    transition: all 0.3s ease;
+}
+
+/* 增强模态框样式 */
+.modal-content {
+    animation: modal-fade-in 0.3s ease;
+}
+
+@keyframes modal-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 增强加载动画 */
+.loading-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* 响应式设计优化 */
+@media (max-width: 640px) {
+    .ai-analysis-result h1 {
+        font-size: 1.25rem;
+    }
+    
+    .ai-analysis-result h2 {
+        font-size: 1.125rem;
+    }
+    
+    .ai-analysis-result h3 {
+        font-size: 1rem;
+    }
+}
